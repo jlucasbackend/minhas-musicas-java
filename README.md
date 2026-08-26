@@ -1,6 +1,40 @@
 # Minhas Músicas - Java
 
-Projeto final desenvolvido durante o curso de **Orientação a Objetos em Java**, com o objetivo de aplicar na prática os principais conceitos de Programação Orientada a Objetos.
+Projeto final desenvolvido durante o curso de **Orientação a Objetos em Java**, com foco na aplicação prática dos principais conceitos de Programação Orientada a Objetos.
+
+## Sobre o projeto
+
+O projeto simula uma aplicação de gerenciamento de músicas e podcasts, permitindo cadastrar conteúdos, registrar reproduções e curtidas, classificá-los e adicioná-los a uma playlist.
+
+## Funcionalidades
+
+* Cadastro de músicas e podcasts
+* Registro de reproduções e curtidas
+* Exibição das informações dos áudios
+* Classificação dos conteúdos
+* Filtro de recomendação
+* Gerenciamento de playlist
+* Controle da quantidade de músicas e duração total
+
+## Conceitos de Java e POO utilizados
+
+* Encapsulamento
+* Herança
+* Polimorfismo
+* Interfaces
+* Sobrescrita de métodos
+* Modificadores de acesso
+* Getters e Setters
+
+## Estrutura do projeto
+
+* **Audio** → superclasse com os atributos e comportamentos comuns
+* **Musica** → especialização de `Audio` para músicas
+* **Podcast** → especialização de `Audio` para podcasts
+* **Playlist** → gerenciamento das faixas e duração total
+* **Classificavel** → interface para classificação dos conteúdos
+* **FiltroRecomendacao** → responsável pelas recomendações
+* **Principal** → execução e demonstração do projeto
 
 ## Tecnologias
 
@@ -9,73 +43,17 @@ Projeto final desenvolvido durante o curso de **Orientação a Objetos em Java**
 * Git
 * GitHub
 
-## Conceitos utilizados
-
-* Programação Orientada a Objetos
-* Encapsulamento
-* Herança
-* Polimorfismo
-* Interfaces
-* Sobrescrita de métodos
-* Getters e Setters
-* Modificadores de acesso
-
-## Sobre o projeto
-
-O projeto simula uma aplicação simples de gerenciamento de músicas e podcasts.
-
-A aplicação permite:
-
-* Criar músicas e podcasts;
-* Armazenar informações sobre os áudios;
-* Registrar reproduções e curtidas;
-* Exibir informações dos áudios;
-* Classificar músicas e podcasts de acordo com o número de reproduções;
-* Adicionar faixas a uma playlist;
-* Calcular a duração total da playlist;
-* Filtrar conteúdos de acordo com sua classificação.
-
-## Estrutura do projeto
-
-### `Audio`
-
-Superclasse responsável pelas características comuns entre músicas e podcasts, como título, duração, reproduções e curtidas.
-
-### `Musica`
-
-Subclasse de `Audio` que representa músicas, contendo informações como cantor, álbum e gênero.
-
-### `Podcast`
-
-Subclasse de `Audio` que representa podcasts, contendo informações como apresentador e descrição.
-
-### `Playlist`
-
-Responsável pelo gerenciamento das faixas adicionadas e pelo controle da quantidade de músicas e duração total.
-
-### `Classificavel`
-
-Interface utilizada para definir um comportamento de classificação que pode ser implementado por diferentes tipos de áudio.
-
-### `FiltroRecomendacao`
-
-Responsável por analisar a classificação dos conteúdos e exibir uma recomendação de acordo com sua popularidade.
-
-### `Principal`
-
-Classe responsável pela execução e demonstração das funcionalidades do projeto.
-
 ## Como executar
 
-1. Clone este repositório.
+1. Clone o repositório.
 2. Abra o projeto no IntelliJ IDEA.
 3. Execute a classe `Principal`.
-4. Observe no console as funcionalidades sendo executadas.
+4. Verifique os resultados no console.
 
 ## Objetivo
 
-Este projeto foi desenvolvido como forma de consolidar os conhecimentos adquiridos durante o estudo de **Programação Orientada a Objetos em Java**, servindo também como parte do meu portfólio de estudos e desenvolvimento na linguagem.
+Este projeto foi desenvolvido para consolidar meus conhecimentos em **Java e Programação Orientada a Objetos**, fazendo parte da minha evolução nos estudos para desenvolvimento **Java Back-end**.
 
 ## Próximos passos
 
-Pretendo evoluir o projeto conforme avanço nos estudos de Java, adicionando novos recursos e aplicando conceitos como persistência de dados, banco de dados e desenvolvimento de APIs.
+A ideia é evoluir o projeto conforme avanço nos estudos, aplicando novos conceitos de Java, banco de dados, persistência e desenvolvimento de APIs.
